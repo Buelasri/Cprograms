@@ -2,8 +2,18 @@
 int main(){
     int  a[8]={1,2,2,3,4,4,5,5};
     int n=8,i,j,k;
+    for(i=0;i<n;i++){
+    for(j=i+1;j<n;j++){
+    if(a[i]==a[j]){
+        for(k=j;k<n-1;k++)
+        a[k]=a[k+1];
+        n--;
+    }else{
+        j++;
+    }
+    }
+    }
     for(i=0;i<n;i++)
-    for(j=i+1;j<n;j++)
-    for(k=j;k<n-(a[i]==a[j]);k++)
+    printf("%d",a[i]);
     return 0;
 }

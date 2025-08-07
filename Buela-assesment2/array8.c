@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     int a[100],n,i,j,count;
-    printf("enter your choie:\n");
+    printf("enter your choice:\n");
     scanf("%d",&n);
     for(i=0;i<n;i++)
     scanf("%d",&a);
