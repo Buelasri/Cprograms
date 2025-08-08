@@ -4,10 +4,10 @@
 int main(){
     int n,i;
     char**names,temp[100];
-    printf("enter number of names:\n")
+    printf("enter number of names:\n");
     scanf("%d",&n);
     getchar();
-    names=malloc(n*sizeof(char*))
+    names=malloc(n*sizeof(char*));
     for(i=0;i<n;i++){
         fgets(temp,sizeof(temp),stdin);
         temp[strcspn(temp,"\n")]=0;

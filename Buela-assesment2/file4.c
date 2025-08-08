@@ -3,7 +3,7 @@ int main(){
     FILE *fp;
     char ch;
     int characters=0,words=0,lines=0;
-    fp=fopen("file.txt","r");
+    fp=fopen("example1.txt","r");
     if(fp=NULL){
         printf("file not found\n");
         return 1;
